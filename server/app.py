@@ -9,7 +9,7 @@ app.secret_key = b'?w\x85Z\x08Q\xbdO\xb8\xa9\xb65Kj\xa9_'
 def show_session(key):
 
     session["hello"] = session.get("hello") or "World"
-    session["goodnight"] = session.get("goodnight") or "Moon"
+    session["goodnight"] = session.get("Goodnight") or "Moon"
 
     response = make_response(jsonify({
         'session': {
